@@ -82,7 +82,6 @@ def main(args):
             # Grab status right away, so we are as close as possible to the time
             # when we ran the full process list query
             innodb_status = get_innodb_status(cursor)
-            open_tables = get_open_tables(cursor)
 
             print("=" * 120)
             print_time()
